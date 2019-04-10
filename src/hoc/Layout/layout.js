@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styles from './layout.module.css'
 
 import Header from '../../components/Header/header';
-//import Footer from '../../components/Footer/footer';
+import Footer from '../../components/Footer/footer';
 
 class Layout extends Component {
 
@@ -25,6 +25,7 @@ class Layout extends Component {
                     onOpenNav={() => this.toggleSidenav(true)}
                 />
                 {this.props.children}
+                <Footer />
             </div>
         )
     }
